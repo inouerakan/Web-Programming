@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>CSS Grid</title>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: 70% 30%;
+                /* column-gap: 1em;
+                row-gap: 1em; */
+                gap: 1em;
+            }
+
+            .grid-container > div {
+                background-color: #eee;
+                padding: 1em;
+            }
+            .grid-container > div:nth-child(odd) {
+                background-color: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius natus ipsum quos ea nam libero, odit blanditiis assumenda minima consectetur voluptates praesentium autem, debitis iste eum dolor asperiores odio!
+            </div>
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod magnam, totam quas neque eveniet repellendus vel voluptas laudantium id deserunt harum delectus accusamus molestias quo laboriosam est velit esse repudiandae?
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius natus ipsum quos ea nam libero, odit blanditiis assumenda minima consectetur voluptates praesentium autem, debitis iste eum dolor asperiores odio!
+            </div>
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod magnam, totam quas neque eveniet repellendus vel voluptas laudantium id deserunt harum delectus accusamus molestias quo laboriosam est velit esse repudiandae?
+            </div>
+        </div>
+    </body>
+</html>
