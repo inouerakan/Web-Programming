@@ -1,0 +1,144 @@
+  /* CSS Reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Yu Gothic";
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+  /* Main CSS */
+
+@font-face {
+  font-family: "Yu Gothic";
+  src: url('font\Yu Gothic\Web Fonts\86992d9cf72f993ae8cd621e3714c1e8.eot?#iefix') format('embedded-opentype'),
+        url('font\Yu Gothic\Web Fonts\86992d9cf72f993ae8cd621e3714c1e8.woff2') format('woff2'),
+        url('font\Yu Gothic\Web Fonts\86992d9cf72f993ae8cd621e3714c1e8.woff') format('woff'),
+        url('font\Yu Gothic\Web Fonts\86992d9cf72f993ae8cd621e3714c1e8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Header */
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 1em 2em;
+  grid-auto-rows: minmax(auto, 2em);
+  color: #9E3EB2;
+  border-top: #9E3EB2 solid 5px;
+}
+.header-lang {
+  display: flex;
+  justify-self: start;
+  max-width: 400px;
+  gap: 0.5em;
+}
+.header-lang-sel {
+  height: fit-content;
+  align-self: center;
+  padding: 0.5em;
+  border-radius: 20px;
+  font-size: 12.5px;
+  height: 4vh;
+  color: #9E3EB2;
+  padding: 0 5vh;
+  border: #9E3EB2 solid 1px;
+}
+.header-lang p {
+  font-size: 10px;
+}
+svg {
+  justify-self: center;
+  padding-top: 1em;
+  height: 75px;
+}
+menu {
+  justify-self: end;
+  font-size: 2em;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1em;
+  margin: 5vh 30vh;
+  height: 60vh;
+}
+.gallery > div {
+  background-size: cover;
+  background-position: center;
+}
+.gallery-big {
+  grid-row: 1 / 4;
+}
+
+/* Navbar */
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
+  text-align: center;
+  margin: 0 30vh;
+  font-size: 13px;
+  height: 8vh;
+}
+nav > div {
+  cursor: pointer;
+  border-bottom: #9f3eb27c solid 5px;
+  justify-self: stretch;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+nav > div:hover {
+  border-bottom: #9E3EB2 solid 5px;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+nav > div p {
+  color: #9E3EB2;
+}
+nav > div p span {
+  color: #6E6E7E;
+}
