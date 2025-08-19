@@ -9,7 +9,9 @@
     interpolate-size: allow-keywords;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -115,14 +117,18 @@ nav a {
   color: #A8DADC;
   transition: all .5s;
 }
-.hero .teks button {
+.hero .teks a {
   background-color: #00000000;
   font-size: small;
   color: #E4E4E4;
   border-radius: 15px;
   border: 1px solid white;
   padding: 7px 14px;
-  cursor: grab;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hero .teks a:visited {
+  text-decoration: none;
 }
 
 .hero .aplikasi {
@@ -215,18 +221,22 @@ nav a {
   justify-content: center;
   gap: 20px;
 }
-#tentang-saya .profil div {
+#tentang-saya .profil a {
   display: flex;
   align-items: center;
   gap: 10px;
   max-width: 200px;
+  max-height: 75px;
   background-color: #4a4a4a;
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
   color: #E4E4E4;
 }
-#tentang-saya .profil div img {
+#tentang-saya .profil a:visited {
+  text-decoration: none;
+}
+#tentang-saya .profil a img {
   border-radius: 50%;
 }
 #tentang-saya .profil i {
@@ -271,7 +281,10 @@ nav a {
   border-radius: 3px;
   background-color: #A8DADC;
   color: #2C2C2C;
-  max-width: fit-content;
   font-size: small;
+  max-width: 100px;
   text-decoration: none;
+}
+#riwayat .gallery div a {
+  background-color: #2C2C2C;
 }
