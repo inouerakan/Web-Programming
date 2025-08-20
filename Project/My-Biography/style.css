@@ -35,6 +35,14 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -80,7 +88,6 @@ nav {
   gap: 20px;
 }
 nav a {
-  text-decoration: none;
   color: #E4E4E4;
 }
 
@@ -125,10 +132,6 @@ nav a {
   border: 1px solid white;
   padding: 7px 14px;
   cursor: pointer;
-  text-decoration: none;
-}
-.hero .teks a:visited {
-  text-decoration: none;
 }
 
 .hero .aplikasi {
@@ -212,6 +215,15 @@ nav a {
 #tentang-saya .kartu-pengalaman h3 {
   color: #E4E4E4;
 }
+.selengkapnya {
+  background-color: #4a4a4a;
+  color: #E4E4E4;
+  font-size: small;
+  max-width: fit-content;
+  align-self: flex-end;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
 #tentang-saya .profil-teks {
   text-align: center;
   font-size: 20px;
@@ -230,11 +242,7 @@ nav a {
   background-color: #4a4a4a;
   padding: 10px;
   border-radius: 10px;
-  text-decoration: none;
   color: #E4E4E4;
-}
-#tentang-saya .profil a:visited {
-  text-decoration: none;
 }
 #tentang-saya .profil a img {
   border-radius: 50%;
@@ -283,8 +291,76 @@ nav a {
   color: #2C2C2C;
   font-size: small;
   max-width: 100px;
-  text-decoration: none;
 }
 #riwayat .gallery div a {
   background-color: #2C2C2C;
+}
+
+.pembuka {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 100px 120px;
+}
+.pembuka h1 {
+  align-self: center;
+  font-size: 40px;
+}
+.pembuka h3 {
+  text-align: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 120px;
+}
+.skill h1 {
+  font-size: 40px;
+}
+
+.grafik {
+  display: flex;
+  gap: 10px;
+}
+.grafik .persentase {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 20%;
+  border-radius: 15px;
+}
+.grafik .persentase div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  height: 50%;
+  border-radius: 10px;
+  color: #2C2C2C;
+  background-color: #A8DADC;
+}
+.grafik .penjelasan {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 15px;
+}
+.grafik .penjelasan div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #4a4a4a;
+}
+.works {
+  display: flex;
+  margin: 0 120px;
+}
+.works h1 {
+  font-size: 40px;
 }
