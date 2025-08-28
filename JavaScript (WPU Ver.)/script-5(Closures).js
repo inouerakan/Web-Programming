@@ -31,7 +31,7 @@ let add = (function() {
         return ++counter;
     }
 })();
-ounter = 100
+counter = 100
 
 console.log(add())
 console.log(add())
